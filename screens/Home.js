@@ -14,7 +14,8 @@ export default function Home() {
         <Text style={styles.subtitle}>
           Frontend Developer | Designer | Problem Solver
         </Text>
-         <Text style={styles.subtitle}>
+
+        <Text style={styles.subtitle}>
           Hello my name is Giret Almonte, I am currently enrolled in the Digital Media major at UCF.
         </Text>
         <Text style={styles.subtitle}>
