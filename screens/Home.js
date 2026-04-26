@@ -14,6 +14,8 @@ export default function Home() {
         <Text style={styles.subtitle}>
           Frontend Developer | Designer | Problem Solver
         </Text>
+        <Text>Hello my name is Giret Almonte, I am enrolled in the Digital Media major at UCF.</Text>
+        <Text>I am eager to contunie learning and creating designs that I am proud of. </Text>
       </View>
     </ImageBackground>
   );
