@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from "react";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Home from "./screens/Home";
+import About from "./screens/About";
+import Projects from "./screens/Projects";
+import Contact from "./screens/Contact";
+
+import styles from "./styles";
 
 export default function App() {
+  const [page, setPage] = useState("home");
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <div style={styles.container}>
+      <Navbar setPage={setPage} />
+
+      {page === "home" && <Home />}
+      {page === "about" && <About />}
+      {page === "projects" && <Projects />}
+      {page === "contact" && <Contact />}
+
+      <Footer />
+    </div>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
